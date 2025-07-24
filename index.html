@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>fabifanatic</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="maze-section visible fade-in" id="start">
+    <h1>Hey sweet pea 💘</h1>
+    <p>Let’s walk this little love maze together.</p>
+    <img src="hearts.gif" alt="hearts"/>
+    <button onclick="nextMaze()">Take the first step</button>
+  </div>
+
+  <div class="maze-section hidden fade-in">
+    <h2>Step 1</h2>
+    <p>You brighten every room just by being in it.</p>
+    <img src="sparkles.gif" alt="sparkles"/>
+    <button onclick="nextMaze()">Next path</button>
+  </div>
+
+  <div class="maze-section hidden fade-in">
+    <h2>Step 2</h2>
+    <p>Even your silences say something sweet to me.</p>
+    <img src="stars.gif" alt="stars"/>
+    <button onclick="nextMaze()">Deeper into the maze</button>
+  </div>
+
+  <div class="maze-section hidden fade-in">
+    <h2>Final Turn</h2>
+    <p>We’re almost at the heart of it all...</p>
+    <img src="twinkle.gif" alt="twinkle"/>
+    <button onclick="nextMaze()">Final question</button>
+  </div>
+
+  <div class="maze-section hidden fade-in" id="question">
+    <h2>Promise me you won’t give up on us?</h2>
+    <div class="btn-group">
+      <button onclick="respondYes()">Yes</button>
+      <button onclick="respondNo()">No</button>
+    </div>
+    <p id="no-message" class="hidden cheesy">Wrong answer, sweet pea... try again 🥺</p>
+  </div>
+
+  <div class="maze-section hidden fade-in" id="final">
+    <h2>You said yes 💖</h2>
+    <p>
+      That means more than you know.<br>
+      I promise to keep showing up for you—<br>
+      next time, I’ll bring my whole heart.
+    </p>
+    <img src="confetti.gif" alt="confetti"/>
+    <p class="exit">Until then... this is just a little page for a big heart.</p>
+  </div>
+</body>
+</html>
